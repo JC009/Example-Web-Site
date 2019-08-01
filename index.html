@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Podstawy RPG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial Black;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-image: url("PICS/d20.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.main {   
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    background-image: url("PICS/background.jpg");
+    background-color: white;
+    padding: 20px;
+}
+
+.img {
+    background-color: rgba(0,0,0,0.2);
+    width: auto;
+    height: auto;
+    padding: 16px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Gry Fabularne</h1>
+    <h3>Wszystko, co powinieneś wiedzieć o grach RPG</h3>
+  </div>
+</div>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Czym są gry RPG?</a>
+  <a href="KarPost.html">Czym jest Karta Postaci?</a>
+  <a href="Mechanika.html">Czym jest Mechanika Gry?</a>
+  <a href="PopSys.html">Popularne Systemy</a>
+  <a href="SymKosc.html">Symulator Kości</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  	<div class="sticky">
+      <h2>Tutaj dowiesz się...</h2>
+      <div class="img" style="height:auto;"> 
+      	Czym jest Gra Fabularna?
+      </div>
+      <p>
+      	- Na czym ona polega? <br>
+      	- Kto jest potrzebny do gry? <br>
+      </p>
+      <div class="img" style="height:auto;">Czym Jest System?</div>
+      <p>
+      	- Czym jest mechanika? <br>
+      	- Czym jest konwencja świata? <br>
+      	- Czym są podręczniki do gier RPG? <br>
+      	- Czym są podręczniki do gier RPG? <br>
+      </p>
+      <div class="img" style="height:auto;">Kim jest GM?</div> <br>
+      <div class="img" style="height:auto;">Kim jest Gracz?</div>
+      
+  </div>
+</div>
+  <div class="main">
+      <h2>CZYM JEST GRA FABULARNA?</h2>
+      <p>Gra fabularna (inaczej RPG, z ang. role-playing game, nieraz zwana grą wyobraźni, potocznie erpegiem lub rolplejem) – gra towarzyska oparta na narracji, w której gracze (od jednego do kilku) wcielają się w role fikcyjnych postaci. Cała rozgrywka toczy się zazwyczaj w fikcyjnym świecie, istniejącym tylko w wyobraźni grających. Jej celem na ogół jest rozegranie gry według zaplanowanego scenariusza i osiągnięcie umownie określonych lub indywidualnych celów, przy zachowaniu wybranego zestawu reguł, zwanego mechaniką gry.
+      </p>
+        <video width="800" controls>
+          <source src="MOVIES/DDiesel.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+       <br/>
+      <p>
+      	Klasyczną grę fabularną można porównać do teatru improwizacji, w którym osoba prowadząca (zwana mistrzem gry) odgrywa rolę autora scenariusza, reżysera, narratora i zazwyczaj aktora ról postaci drugoplanowych. Natomiast gracze, czyli osoby biorące udział w grze, są aktorami pierwszoplanowymi, nieznającymi wszakże scenariusza i zmuszonymi improwizować oraz reagować na sytuacje, jakie stawia przed nimi mistrz gry. Jeżeli graczy jest wielu, mogą dobierać się w drużyny. Natomiast jeżeli w rozgrywce bierze udział wyłącznie jeden gracz, mistrz gry organizuje tzw. solówkę. <br/>
+
+		Cała rozgrywka toczy się w ramach spotkań – sesji – odbywających się w odpowiednich pomieszczeniach. Rozgrywka jest konstruowana prawie wyłącznie w oparciu o słowne opisy, czasem wspomagane muzyką lub taktyczną planszą. Mistrz gry opisuje graczom ich otoczenie i akcje wykonywane przez bohaterów niezależnych, gracze natomiast opisują czynności wykonywane przez ich postaci. Do zadań mistrza gry należy również decyzja, które akcje podejmowane przez graczy osiągną zamierzone efekty, a które nie. Stopień dozwolonej identyfikacji między graczami a odgrywanymi przez nich postaciami – wypowiadanie się w pierwszej osobie, wykorzystanie rekwizytów, kontakt fizyczny z pozostałymi graczami – jest kwestią umowną i zależy wyłącznie od stopnia immersji (zanurzenia) graczy w opisywany świat gry.
+      </p>
+      <br/><br/>
+      <h2>Czym jest System?</h2><br/>
+      <img src="PICS/systems.jpg" width="700px"> <br/>
+      <p>
+        System jest jednym z podstawowych pojęć w terminologii RPG. Zazwyczaj rozumie się go jako połączenie opisu świata z mechaniką gry, zawarte w jednym lub więcej podręcznikach. Opisuje miejsce, w jakim rozgrywa się akcja gry. Opis taki może sięgać od geografii, poprzez historię, socjologię, religię czy biologię, po obowiązujące w danym świecie prawa fizyki (nierzadko uwzględniające przekroczenie typowego ich pojęcia poprzez wprowadzenie magii lub zaawansowanego mistycyzmu). Skrupulatny opis świata pozwala na toczenie w nim różnorodnych typów rozgrywek, dlatego mistrzowie gry nierzadko decydują się na rozszerzanie podręcznikowych systemów w celu rozegrania konkretnych, złożonych scenariuszy. Jeżeli takich modyfikacji jest większa liczba, uzyskują miano systemów autorskich. Z drugiej strony, niektóre gry ograniczają opis świata do minimum, w ten sposób zachęcając graczy do wspólnego tworzenia świata.
+      </p><br/>
+
+      <p>
+      	<h3>Konwencje</h3>
+			Światy, w jakich toczą się akcje gier fabularnych można podzielić według konwencji, w których są utrzymane – podobnie jak dzieli się dzieła literackie. Istnieją systemy w konwencjach fantasy, science fiction, cyberpunk, horror, a także wzorowane (mniej lub bardziej dokładnie) na realiach historycznych wybranej epoki oraz na współczesności. Można też podzielić je według podejścia do odwzorowywania rzeczywistości, na przykład na systemy realistyczne i heroiczne.
+      </p><br/>
+
+      <p>
+      	<h3>Podręczniki i scenariusze</h3>
+			Reguły rządzące poszczególnymi systemami zwyczajowo zawarte są w podręcznikach, z których treścią (możliwie najdokładniej) powinni się zapoznawać zarówno gracze – przygotowując rolę, które będą odgrywać – jak również mistrz gry przygotowujący sesje. Na podstawie podręczników mistrz gry opracowuje scenariusz, który definiuje miejsce i czas akcji gry, jej cel, bohaterów oraz użyte rekwizyty[5]. Bardziej rozbudowane scenariusze mogą doczekać się wydania w formie dodatków do podręcznika gry, stanowiących rozszerzenie zasad, opisów i tematyki gry fabularnej.
+      </p><br/>
+
+      <p>
+      	<h3>Mechanika</h3>
+			Grę RPG można przyrównać do teatru kukiełkowego wielu aktorów. Gracz to aktor animujący swoją kukiełkę (postać), Mistrz Gry to scenarzysta i reżyser dbający o spójność przygody. Mechanika gry jest spoiwem, które pozwala na ujednoliconą interakcję wszystkich aktorów teatru w ramach wykreowanego przez Mistrza Gry świata (dając mu przy tym ograniczoną nad nim władzę).
+      </p>
+      Więcej informacji o mechanice gry znajdziesz w zakładce 
+      <a href="Mechanika.html">Mechanika Gry RPG</a>
+      <br/><br/><br/>
+
+      <h2>Kim jest GM?</h2>
+
+	  <img src="PICS/GM.jpg"> <br/>
+
+	  <p>
+	  	GM czyli Game Master (nazywany również Mistrzem Gry - MG) jest najważniejszą osobą w każdej sesji RPG. To on w głównej mierze odpowiada za klimat gry oraz wydarzenia w niej przedstawione, a także posiada pełną kontrolę nad całym światem przedstawionym w grze, z wyjątkiem postaci Graczy. <br/>
+	  	GM odpowiada za przygotowanie scenariusza rozgrywki, czyli niezwykłych historii, niebezpiecznych przygód, interesujących postaci niezależnych (NPC), oraz wszelkiego rodzaju spotkań czy zdarzeń, które pojawią się na drodze Graczy w trakcie rozgrywki. 
+	  	<br/>
+	  	GM jest narratorem, którego zadaniem jest słowna prezentracja świata gry oraz wszystkich akcji rozgrywających się na jego terenie, a także w pewnym sensie Graczem, sterującym zachowaniem wszystkich napotkanych przez pozostałych członków rozgrywki postaci NPC.
+	  </p>
+
+	  <h2>Kim jest Gracz?</h2>
+
+	  <p>
+	  	Najprościej to ująć tak: Gracz jest dokładnie tym, kim chce być. <br/>
+	  	Wymaga to jednak pewnego sprecyzowania, a także większej szczegółowości w opisie. Gracz jest w świecie gry postacią (bohaterem gry), której zachowaniem steruje. Właściwie ta definicja nie różni się zbytnio od np. gracza gier komputerowych, lecz w grach Fabularnych Gracz posiada niemal absolutną kontrolę nad swoją postacią. Jako, że cała rozgrywka prowadzona jest właściwie w wyobraźni wszystkich uczestników Gry, istnieją jedynie dwa ograniczenia, które mówią co wolno, a czego nie wolno Graczowi deklarować jako akcji swojego bohatera. Są nimi Mistrz Gry (MG, lub z angielskiego GM - Game Master), oraz system gry.
+	  </p>
+
+	  
+
+  </div>
+</div>
+
+<div class="footer">
+  <h4>Jan Krosny 2018</h4>
+</div>
+
+</body>
+</html>

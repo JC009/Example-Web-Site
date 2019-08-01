@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Podstawy RPG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: Arial Black;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-image: url("PICS/d20.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.main {   
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    background-image: url("PICS/background.jpg");
+    background-color: white;
+    padding: 20px;
+}
+
+.img {
+    background-color: rgba(0,0,0,0.2);
+    width: auto;
+    height: auto;
+    padding: 16px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    width: 100%;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+#placeholder {
+  height: 130px;
+  width: 200px;
+  vertical-align: middle;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}
+
+.btn-group button {
+    background-color: #C0C0C0;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:hover {
+    background-color: #A0A0A0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Gry Fabularne</h1>
+    <h3>Wszystko, co powinieneś wiedzieć o grach RPG</h3>
+  </div>
+</div>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Czym są gry RPG?</a>
+  <a href="KarPost.html">Czym jest Karta Postaci?</a>
+  <a href="Mechanika.html">Czym jest Mechanika Gry?</a>
+  <a href="PopSys.html">Popularne Systemy</a>
+  <a href="SymKosc.html">Symulator Kości</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  	<div class="sticky">
+      <h2>Symulator Kości</h2>
+      <div class="img" style="height:auto;">d4 - kość czterościenna </div><br/>
+      <div class="img" style="height:auto;">d6 - kość sześciościenna </div><br/>
+      <div class="img" style="height:auto;">d10 - kość dziesięciościenna </div><br/>
+      <div class="img" style="height:auto;">d12 - kość dwunastościenna </div><br/>
+      <div class="img" style="height:auto;">d20 - kość dwudziestościenna </div><br/>
+      <div class="img" style="height:auto;">d100 - rzut procentowy </div><br/>
+  </div>
+</div>
+  <div class="main">
+    <div id="placeholder">
+  
+  </div>
+  <div class="btn-group">
+  <button id="button4">d4</button>
+  <button id="button6">d6</button>
+  <button id="button10">d10</button>
+  <button id="button12">d12</button>
+  <button id="button20">d20</button>
+  <button id="button100">d100</button>
+</div>
+  <script src="dice.js"></script>
+  <script src="ui.js"></script>
+
+  </div>
+
+<div class="footer">
+  <h4>Jan Krosny 2018</h4>
+</div>
+
+</body>
+</html>
+
+<script  src="symulator.js"></script>
+
+</body>
+
+</html>
+

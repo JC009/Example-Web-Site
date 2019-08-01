@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Podstawy RPG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial Black;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-image: url("PICS/d20.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.main {   
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    background-image: url("PICS/background.jpg");
+    background-color: white;
+    padding: 20px;
+}
+
+.img {
+    background-color: rgba(0,0,0,0.2);
+    width: auto;
+    height: auto;
+    padding: 16px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Gry Fabularne</h1>
+    <h3>Wszystko, co powinieneś wiedzieć o grach RPG</h3>
+  </div>
+</div>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Czym są gry RPG?</a>
+  <a href="KarPost.html">Czym jest Karta Postaci?</a>
+  <a href="Mechanika.html">Czym jest Mechanika Gry?</a>
+  <a href="PopSys.html">Popularne Systemy</a>
+  <a href="SymKosc.html">Symulator Kości</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  	<div class="sticky">
+      <h2>W skrócie...</h2>
+      <div class="img" style="height:auto;">Mechanika – w grach fabularnych zasady określające sposób przeprowadzania rozgrywki, na które składają się również m.in.: <br/> 
+        sposoby generowania świata gry oraz reguły według których rozgrywane są przygody (scenariusze)<br/>
+      zasady tworzenia postaci i jej interakcji ze światem.</div> <br/>
+      <div class="img" style="height:auto;">Mechanika posiada wiele zastosowań, takich jak:<br/>
+        - Parametryzacja rozgrywki <br/>
+        - Rozstrzyganie konfliktów <br/>
+        - Określenie zasad tworzenia postaci <br/>
+        - Określenie losowości rozgrywki <br/>
+        - Stworzenie przejrzystych zasad prowadzenia gry
+      </div><br>
+  </div>
+</div>
+  <div class="main">
+      <h2>Rola mechaniki</h2>
+      <p>
+        <h3>Parametryzacja</h3>
+        W głównej mierze mechanika jest odpowiedzialna za usystematyzowanie i sparametryzowanie świata gry oraz stworzenie jego w miarę dokładnego matematycznego modelu (choć nie jest to regułą – istnieją systemy unikające nadmiernej parametryzacji, np. Neuroshima).
+
+        Dzięki użyciu liczb określenie przewagi jednej z postaci w danej dziedzinie sprowadza się do porównania współczynników danych parametrów, takich jak np. siła, czy zręczność.
+
+        <h3>Losowość</h3>
+        Aby upodobnić świat gry do świata realnego, w którym nie posiadamy pełnej wiedzy o danych wydarzeniach oraz zapobiec powstawaniu świata deterministycznego, wprowadza się najczęściej czynnik losowy oparty najczęściej na prawdopodobieństwie, który symuluje wszelkie losowe i nieprzewidziane wydarzenia (potencjalny wynik naszej niewiedzy o świecie). Najczęściej interpretowany jako szczęście.
+
+        <h3>Rozstrzyganie konfliktów</h3>
+        Cechy postaci zawierają częstokroć opis jej upodobań, wady, zalety itp. Choć z reguły decyzja gracza determinuje działanie postaci, to jednak niekiedy cecha postaci nadana w ramach systemu może spowodować akcję postaci niezgodną z jego wolą.
+
+        Może prowadzić to do konfliktu między graczem a Mistrzem Gry, będącym swoistym reprezentantem mechaniki (występuje wówczas jako swoisty dodatkowy gracz biorący udział w rozgrywce grający przeciwko innym graczom).
+
+        Jeżeli postać gracza ma cechę plotkarz i spotyka inną (np. niezależną), zaś gracz w danej sytuacji nie chce, by jego bohater zdradził pewną informację, a Mistrz Gry wyraźnie sugeruje, że powinien to zrobić (bo tak skonstruowana jest jego postać), to konflikt rozstrzyga mechanika gry.
+
+        Dość dobrze rozwiniętym jest system tzw. testów. W powyższym przypadku gracz winien wykonać test (np. związany z współczynnikiem siła woli) określający, czy jego postaci udało się opanować język, czy też nie.
+      </p> <br/>
+
+      <h2>Mechanizmy w praktyce</h2>
+      <p>
+        <h3>Kości do gry</h3>
+        Losowość modelowana jest zwykle przez kości do gry. Najczęściej są one oparte na rzutach dedykowanymi kośćmi, choć istnieją również systemy, które z nich nie korzystają (np. Amber).<br/>
+
+        Mechaniki je wykorzystujące posiłkować się mogą różnymi ich rodzajami, najczęściej stosuje się kości o kształcie wielościanów foremnych: czterościenne, sześciościenne, ośmiościenne, dwunastościenne i dwudziestościenne. W systemach gier oznaczane są one zwykle przez k4, k6, k8, k12 oraz k20.  <br/> (k od wyrazu „kość”, stosuje się również literę d pochodzącą od ang. dice – kość).<br/>
+
+        Używa się również kości dziesięciościennej k10, istnieją nawet specjalne ich rodzaje zwane kośćmi procentowymi, które na ściankach noszą liczby nie z przedziału 0-9, a 0-90. Czasami spotyka się także kości stuścienne, są one jednak niepraktyczne i zwykle posiadają znaczenie wyłącznie kolekcjonerskie.<br/>
+
+        <h3>Tworzenie postaci</h3>
+        Mechanika skupia się przede wszystkim na aspektach technicznych, dlatego z jej punktu widzenia podczas tworzenia postaci najważniejsze jest jej poprawne zdefiniowanie w ramach świata gry, na przykład przez określanie współczynników.<br/>
+
+        W grach wykorzystujących kości mechanika gry może opisywać sposoby przeliczania ich rzutów na odpowiednie współczynniki, w innych wypadkach może to być dokonane np. poprzez rozdzielenie przydzielonych postaci punktów doświadczenia.<br/>
+
+        Gracz powinien mieć pomysł na postać i jej ostateczną wizję. Wskazane jest, aby wykazywał się przy tym inwencją. Wiele mechanik silnia zaleca, aby gracz oprócz wyznaczenia kompletu współczynników inne aspekty postaci, takie jak jej wygląd, sposób wyrażania się, nawyki i przyzwyczajenia.<br/>
+
+        Istnieje też podział ze względu na wpływ gracza na ustalenie początkowych cech postaci: niektóre stosują losowy ich rozkład, inne wręcz przeciwnie – przyznają graczowi pewną pulę punktów, którą przydziela on swojemu bohaterowi wedle własnego uznania.<br/>
+
+        <h3>Metamechanika</h3>
+        Podczas rozgrywki mechanika nie zawsze ogranicza się do symulacji zdarzeń losowych w świecie gry. Pod pojęciem metamechaniki kryją się zasady, które służą lepszej kontroli fabuły i klimatu rozgrywki RPG. Zasady te mogą ingerować w reguły rządzące światem gry, wpływać na celowe działania postaci, w taki sposób, by usprawnić, czy urozmaicić rozgrywkę.<br/>
+
+        <h3>Testy, rzuty, modyfikatory</h3>
+        Powróćmy do przykładowej gry w której nastąpił konflikt świat gry–gracz. Test (w grach wykorzystujących kości nazywany też rzutem) jest sposobem na jego rozwiązanie. Dany test określa zwykle poziom trudności przed którą stanął gracz oraz warunki sukcesu oraz porażki.<br/>
+
+        Poziom trudności jest zwykle konkretną wartością liczbową ustalaną zwykle ostatecznie przez mistrza gry (zgodnie z regułami świata, scenariuszem gry itp.), którą w mechanikach wykorzystujących kości należy osiągnąć. Czasami spotyka się również system tzw. sukcesów. Pokonanie testu wymaga pokonania określonej liczby testów cząstkowych (zwanych właśnie sukcesami). Testy cząstkowe rozstrzygane są zwykle za pomocą kości.<br/>
+
+        Przy rzutach najczęściej można spotkać się z zapisem symbolicznym typu  XkY+Z, gdzie X oznacza liczbę kości, kY rodzaj kości, zaś Z dodatkowy modyfikator oznaczający po prostu liczbę oczek jaką należy dodać do końcowego wyniku. Przykładowo 2k8+3 oznacza rzut dwiema koścmi ośmiościennymi z modyfikatorem równym trzy. Istnieją również modyfikatory ujemne, które zapisywane są wówczas ze znakiem minusa.<br/>
+
+        Wielkość modyfikatora charakteryzowana jest zwykle przez mechanikę gry, często na podstawie atrybutów lub stanu postaci lub też przez scenariusz gry (o którym decyduje mistrz gry).<br/>
+
+        W wielu systemach (Warhammer, Basic Role-Playing) popularną formą rzutów są rzuty procentowe (k100), których zwykle nie wykonuje się kośćmi stuściennymi, lecz dwiema kośćmi dziesięciościennymi interpretując wyniki rzutów koścmi jako cyfry wyniku procentowego testu.<br/>
+      </p>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h4>Jan Krosny 2018</h4>
+</div>
+
+</body>
+</html>
